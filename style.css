@@ -7,3 +7,54 @@
  Description: Thème enfant à l'ocasion de la nomination aux Oscars Shorts
  Version: 0.1
  */
+
+.oscar-section {
+   position: relative;
+   display: flex;
+   justify-content: center;
+   height: 240px;
+   margin-top: 180px;
+   margin-bottom: 125px;
+}
+
+.oscar-section::before {
+   position: absolute;
+   content: url("./assets/images/Sunflower.png");
+   left: 4em;
+	top: -8em;
+}
+
+.oscar-section::after {
+   position: absolute;
+   content: url("./assets/images/orchid.png");
+   right: -4em;
+	bottom: 15.8em;
+}
+
+.oscar-text-container {
+   width: 676px;
+   height: 270px;
+   background-image: url(./assets/images/orange_oscar_bg.png);
+   background-size: 110%;
+   background-position: center;
+}
+
+.oscar-text {
+   display: inline-block;
+   width: 643px;
+   height: 196px;
+    color: #FFF5E9;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: Quicksand;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.84px;
+    margin-left: 20px;
+ }
+
+.oscar-image {
+   height: 129px;
+   margin-top: 30px;
+} 
