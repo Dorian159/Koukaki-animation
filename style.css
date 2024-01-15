@@ -12,9 +12,14 @@
    position: relative;
    display: flex;
    justify-content: center;
-   height: 240px;
+   height: 300px;
    margin-top: 180px;
-   margin-bottom: 125px;
+   margin-bottom: 50px;
+   background-image: url(./assets/images/orange_oscar_bg.png);
+   background-size: 57%;
+   background-repeat: no-repeat;
+   background-position-x: 160px;
+   background-position-y: -10px;
 }
 
 .oscar-section::before {
@@ -34,8 +39,7 @@
 .oscar-text-container {
    width: 676px;
    height: 270px;
-   background-image: url(./assets/images/orange_oscar_bg.png);
-   background-size: 110%;
+   
    background-position: center;
 }
 
