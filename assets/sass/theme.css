@@ -32,4 +32,30 @@
 #studio h2::after {
   width: 109px;
   height: 109px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+section {
+  animation: fadeIn 1s linear;
+}
+
+.hidden {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(100%);
+  transition: opacity 1s, transform 1s;
+}
+
+.show {
+  opacity: 1;
+  transform: translateY(0);
 }/*# sourceMappingURL=theme.css.map */
