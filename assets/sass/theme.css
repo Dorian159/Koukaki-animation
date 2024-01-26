@@ -58,4 +58,29 @@ section {
 .show {
   opacity: 1;
   transform: translateY(0);
+}
+
+@keyframes zigzag-logo {
+  0% {
+    transform: translate(0%, 0%);
+  }
+  25% {
+    transform: translate(-2%, 2%);
+  }
+  50% {
+    transform: translate(2%, -2%);
+  }
+  75% {
+    transform: translate(-1%, 1%);
+  }
+  100% {
+    transform: translate(0%, 0%);
+  }
+}
+.float {
+  animation: zigzag-logo 3s cubic-bezier(0.645, 0.045, 0.355, 1) infinite;
+}
+
+.banner img.parallax-logo {
+  opacity: 1;
 }/*# sourceMappingURL=theme.css.map */

@@ -8,6 +8,8 @@
  Version: 0.1
  */
 
+/* Section Oscar */
+
 .oscar-section {
    position: relative;
    display: flex;
@@ -44,22 +46,52 @@
 }
 
 .oscar-text {
+   padding: initial !important;
+   margin: revert !important;
+   text-align: initial !important;
    display: inline-block;
    width: 643px;
    height: 196px;
-    color: #FFF5E9;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    font-family: Quicksand;
-    font-size: 42px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: -0.84px;
-    margin-left: 20px;
+   color: #FFF5E9;
+   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+   font-family: Quicksand;
+   font-size: 42px;
+   font-style: normal;
+   font-weight: 700;
+   line-height: normal;
+   letter-spacing: -0.84px;
+   margin-left: 20px;
  }
 
 .oscar-image {
    height: 129px;
    margin-top: 30px;
 } 
+
+/* Partie banner et parallax */
+
+
+.banner img {
+   position: absolute !important;
+   z-index: 2;
+   max-width: 40% !important;
+}
+
+#background-video {
+   position: relative;
+   object-fit: cover;
+   z-index: 1;
+   }
+
+.banner {
+   background-image: url("./assets/images/banner.png");
+   min-height: 806px;
+   background-size: cover;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   z-index: 0;
+   }
+
+
 
