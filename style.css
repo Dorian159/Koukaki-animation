@@ -93,5 +93,41 @@
    z-index: 0;
    }
 
+/* Carrousel */
+
+.swiper {
+      width: 100%;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      }
+
+.swiper-slide {
+      background-position: center;
+      background-size: cover;
+      width: 300px;
+      height: 300px;
+      }
+
+.swiper-slide img {
+      display: block;
+      width: 100%;
+      }
+
+.swiper-container {
+   margin-left: auto;
+   margin-right: auto;
+   }
+
+/* .story #characters {
+   text-align: center;
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+}
+
+.story #characters h3 {
+   align-self: self-start;
+	background-image: url("./assets/images/orange_characters_bg.png");
+} */
 
 
