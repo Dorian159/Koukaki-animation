@@ -64,9 +64,9 @@ const swiper = new Swiper(".mySwiper", {
   slidesPerView: "auto",
   loop: true,
   coverflowEffect: {
-    rotate: 50,
+    rotate: 0,
     stretch: 0,
-    depth: 50,
+    depth: 0,
     modifier: 1,
     slideShadows: false,
   },

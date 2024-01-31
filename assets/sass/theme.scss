@@ -100,3 +100,23 @@ section {
 .parallaxLogo {
     opacity: 1;
 }
+
+// Partie Carrousel
+
+.story #characters {
+    max-width: 1440px;
+
+    h3 {
+        margin-left: -1800px !important;
+    }
+}
+
+.swiper-wrapper {
+    height: 500px;
+}
+
+.swiper-slide {
+    width: 400px;
+    height: 400px;
+    margin: 40px;
+}

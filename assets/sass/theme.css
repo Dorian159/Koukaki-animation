@@ -81,6 +81,23 @@ section {
   animation: zigzag-logo 3s cubic-bezier(0.645, 0.045, 0.355, 1) infinite;
 }
 
-.banner img.parallax-logo {
+.parallaxLogo {
   opacity: 1;
+}
+
+.story #characters {
+  max-width: 1440px;
+}
+.story #characters h3 {
+  margin-left: -1800px !important;
+}
+
+.swiper-wrapper {
+  height: 500px;
+}
+
+.swiper-slide {
+  width: 400px;
+  height: 400px;
+  margin: 40px;
 }/*# sourceMappingURL=theme.css.map */
