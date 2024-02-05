@@ -10,7 +10,7 @@ get_header();
             </video>
             <img class="parallaxLogo float" src="<?php echo get_template_directory_uri() . '/assets/images/logo.png'; ?> " alt="logo Fleurs d'oranger & chats errants">
         </section>
-        <section id="#story" class="story">
+        <section id="story" class="story">
             <h2><span class="hidden">L'histoire</span></h2>
             <article id="" class="story__article">
                 <p><?php echo get_theme_mod('story'); ?></p>
@@ -36,6 +36,7 @@ get_header();
                     <h3><span class="hidden">Le Lieu</span></h3>
                     <p><?php echo get_theme_mod('place'); ?></p>
                 </div>
+                <img class="nuages" src="<?php echo get_stylesheet_directory_uri() . '/assets/images/nuages.png'; ?> " alt="Nuages">
 
             </article>
         </section>

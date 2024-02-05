@@ -71,3 +71,36 @@ const swiper = new Swiper(".mySwiper", {
     slideShadows: false,
   },
 });
+
+// Nuages
+
+let nuages = document.querySelector('.nuages');
+const startCloud = 1548;
+const endCloud = 2458;
+
+window.addEventListener('scroll', () => {
+  // Obtenez la position de défilement verticale de la page
+  let scrollPosition = window.scrollY;
+
+  // Calculez le pourcentage de progression entre startCloud et endCloud
+  let progression = (scrollPosition - startCloud) / (endCloud - startCloud);
+
+  // Limitez la progression entre 0 et 1
+  progression = Math.min(1, Math.max(0, progression));
+
+  // Utilisez une fonction d'interpolation (par exemple, easeInOutQuad) pour rendre le mouvement plus fluide
+  let easedProgression = easeInOutQuad(progression);
+  console.log(scrollPosition);
+  // Calculez la valeur de déplacement des nuages en fonction du pourcentage de progression
+  let deplacement = 300 * easedProgression;
+
+  // Appliquez le déplacement aux nuages
+  if (scrollPosition >= startCloud && scrollPosition <= endCloud) {
+    nuages.style.transform = `translateX(-${deplacement}px)`;
+  }
+});
+
+// Fonction d'interpolation easeInOutQuad
+function easeInOutQuad(t) {
+  return t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t;
+}
